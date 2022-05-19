@@ -1,0 +1,23 @@
+#container > div {
+    /*width: 100px;*/
+    height: 100px;
+}
+
+#container{
+    height:300px;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+button {
+    background-color : #2B8EAD;
+    border : 1px;
+}
+
+@media screen and (max-width: 600px) {
+    #container > div {
+       /* grid-column: auto;*/
+        grid-column: span 1;
+    }
+  }
