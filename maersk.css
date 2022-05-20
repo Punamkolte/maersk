@@ -1,23 +1,55 @@
 #container > div {
     /*width: 100px;*/
     height: 100px;
+    text-align: center;
+    font-size: xx-large;
+    color: #FFFFFF;
 }
+
+
+
 
 #container{
     height:300px;
     display: grid;
     gap: 1px;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: minmax(0, 1fr); */
 }
 
 button {
-    background-color : #2B8EAD;
-    border : 1px;
+    width: 80px;
+    background-color: #2B8EAD;
+    border: 1px;
+    height: 50px;
+    border-radius: 11px;
+    color: #FFFFFF;
+    box-shadow: 0px 3px #7ebbcf;
 }
 
-@media screen and (max-width: 600px) {
+.btn-section{
+    padding: 20px;
+    text-align: center;
+}
+
+.note{
+    font-size: xx-small;
+    padding: 10px;
+    text-align: end;
+}
+
+@media screen and (max-width: 500px) {
+    /* #container  {
+          grid-template-columns: minmax(0, 1fr);
+    } */
     #container > div {
-       /* grid-column: auto;*/
-        grid-column: span 1;
+        height: 50px;
+        color: black;
+    }
+
+    h2{
+        text-align: center;
+        background: darkslategrey;
+        color: #FFFFFF;
     }
   }
